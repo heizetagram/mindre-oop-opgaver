@@ -1,4 +1,4 @@
-package davidauthorsandbooks;
+package david.authorsandbooks;
 
 public class Book {
     private String title;

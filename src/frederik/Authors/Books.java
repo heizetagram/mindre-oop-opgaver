@@ -1,4 +1,4 @@
-package Authors;
+package frederik.Authors;
 
 public class Books extends Author {
 
