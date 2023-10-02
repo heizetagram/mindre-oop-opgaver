@@ -8,7 +8,7 @@ public class Entertainment {
 
     // Constructor
     public Entertainment(String title, String type) {
-        this.id = nextId++;
+        id = nextId++;
         this.title = title;
         this.type = type;
     }
