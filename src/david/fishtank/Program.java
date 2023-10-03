@@ -98,7 +98,7 @@ public class Program {
         }
     }
 
-    // Add Fish' condition note
+    // Add Fish condition note
     private void addFishConditionNote(Scanner scan) {
         for (int i = 0; i < aquarium.aquariumContents.size(); i++) {
             System.out.println("\nHow is " + aquarium.aquariumContents.get(i) + " looking?");

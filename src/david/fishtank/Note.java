@@ -30,7 +30,7 @@ public class Note {
 
     @Override
     public String toString() {
-        String test = "";
+        String test;
         if (fish != null)
             test = "\n" + "(" + ConsoleColors.BLUE_BRIGHT + todaysDate + ConsoleColors.RESET + ") [" + grade + "] " + fish + " " + ConsoleColors.YELLOW + note + ConsoleColors.RESET;
         else
