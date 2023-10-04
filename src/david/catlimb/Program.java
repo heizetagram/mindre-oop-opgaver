@@ -8,7 +8,6 @@ public class Program {
     Flap flap;
     String stringAnswer;
     int intAnswer;
-    boolean catRegister;
     boolean catExists;
     boolean catAlreadyRegistered;
     Cat cat1;

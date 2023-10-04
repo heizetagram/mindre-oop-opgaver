@@ -1,11 +1,7 @@
 package david.catlimb;
 
-import java.util.ArrayList;
-
 public class Flap {
     private String status;
-    private UI ui = new UI();
-    private ArrayList<Cat> registeredCats;
     private boolean allowOnlyIn;
     private boolean allowOnlyOut;
     private boolean allowInAndOut;
@@ -17,9 +13,6 @@ public class Flap {
     }
 
     // Getters
-    public String getStatus() {
-        return status;
-    }
     public boolean getAllowOnlyIn() {
         return allowOnlyIn;
     }
