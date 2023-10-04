@@ -1,4 +1,4 @@
-package david.fishtank;
+package david.consolecolors;
 
 public class ConsoleColors {
     // Reset
