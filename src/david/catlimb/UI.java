@@ -7,7 +7,6 @@ public class UI {
 
     public UI() {
     scan = new Scanner(System.in);
-
     }
 
     // Print string
@@ -29,6 +28,4 @@ public class UI {
     public int promptInt() {
         return scan.nextInt();
     }
-
-
 }
