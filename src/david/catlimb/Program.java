@@ -2,7 +2,7 @@ package david.catlimb;
 
 import java.util.ArrayList;
 
-public class Test {
+public class Program {
     UI ui;
     Menu menu;
     Flap flap;
@@ -38,7 +38,7 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        new Test().run();
+        new Program().run();
     }
 
     // Run method
@@ -128,40 +128,41 @@ public class Test {
 
     // Register cat
     private void registerCat() {
-        catRegister = false;
         catExists = false;
         ui.println("Enter ID of cat you want to register");
         intAnswer = ui.promptInt();
 
-        for (Cat cat : cats) {
-            if (registeredCats.size() < 5 && intAnswer == cat.getId()) {
-                addRegisteredCat(cat);
+        if (registeredCats.size() < 5) {
+            for (Cat cat : cats) {
+                if (intAnswer == cat.getId()) {
+                    addRegisteredCat(cat);
+                }
             }
+            ui.promptString(); // Scanner bug
+        } else {
+            ui.promptString(); // Scanner bug
+            cannotRegisterCat();
         }
-        ui.promptString(); // Scanner bug
-        cannotRegisterCat();
     }
 
     // Register cat (body), if cat isn't already registered
     private void addRegisteredCat(Cat cat) {
-        if (registeredCats.size() < 5 && intAnswer == cat.getId()) {
-            catAlreadyRegistered = registeredCats.contains(cat);
-            if (!catAlreadyRegistered) { // If cat isn't already registered, run the following code
-                registeredCats.add(cat);
-                ui.println(cat + " registered");
-                cat.setRegistered(true);
-            } else {
-                ui.println(cat + " is already registered");
-            }
-            catExists = true;
+        catAlreadyRegistered = registeredCats.contains(cat);
+        if (!catAlreadyRegistered) { // If cat isn't already registered, run the following code
+            registeredCats.add(cat);
+            ui.println(cat + " registered");
+            cat.setRegistered(true);
+        } else {
+            ui.println(cat + " is already registered");
         }
+        catExists = true;
     }
 
-    // Cannot register cant
+    // Cannot register cat
     private void cannotRegisterCat() {
         if (!catExists && registeredCats.size() < 5)
             ui.println("Invalid ID");
-        if (!catRegister && registeredCats.size() >= 5)
+        if (registeredCats.size() >= 5)
             ui.println("Cannot register more than 5 cats");
     }
 

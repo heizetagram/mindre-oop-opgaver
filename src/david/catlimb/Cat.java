@@ -30,6 +30,6 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "[" + name + ", ID = " + id + "]";
+        return "[" + name + ", ID = " + ConsoleColors.BLUE_BRIGHT + id + ConsoleColors.RESET + "]";
     }
 }
