@@ -1,5 +1,7 @@
 package david.fishtank;
 
+import david.consolecolors.ConsoleColors;
+
 import java.time.LocalDateTime;
 
 public class Note {

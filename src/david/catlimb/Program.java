@@ -1,5 +1,7 @@
 package david.catlimb;
 
+import david.consolecolors.ConsoleColors;
+
 import java.util.ArrayList;
 
 public class Program {

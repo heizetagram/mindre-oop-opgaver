@@ -1,5 +1,7 @@
 package david.catlimb;
 
+import david.consolecolors.ConsoleColors;
+
 public class Cat {
     private String name;
     private static int nextId = 127;
