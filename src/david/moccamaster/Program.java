@@ -104,14 +104,12 @@ public class Program {
     // Print served drink
     private void printServedDrink() {
         UI.print("Brewing");
-        delay(500);
-        UI.print(".");
-        delay(500);
-        UI.print(".");
-        delay(500);
-        UI.print(".\n");
+        for (int i = 0; i < 3; i++) {
+            delay(500);
+            UI.print(".");
+        }
         delay(500);
 
-        UI.println("Served a " + coffeeMaker.serve() + " ☕️");
+        UI.println("\nServed a " + coffeeMaker.serve() + " ☕️");
     }
 }
