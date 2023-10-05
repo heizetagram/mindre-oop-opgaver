@@ -27,7 +27,7 @@ public class Program {
         menu.printTypeMenu();
         chooseType(UI.promptInt());
 
-        // Check if drink is/isn't an espresso
+        // Check if drink is/isn't an espresso, and ask for size if it isn't
         if (!coffeeMaker.getType().equals(coffeeMaker.getEspresso())) {
             UI.println("What size?");
             menu.printSizeMenu();
@@ -39,8 +39,7 @@ public class Program {
             chooseEspressoShots(UI.promptInt());
         }
 
-        // Prints served drink
-        UI.println("Served a " + coffeeMaker.serve() + " ☕️");
+        printServedDrink();
     }
 
     // Choose drink type
@@ -48,7 +47,7 @@ public class Program {
         switch (type) {
             case 1 -> coffeeMaker.brewBlackCoffee();
             case 2 -> coffeeMaker.brewEspresso();
-            case 3 -> coffeeMaker.brewLatteMachiatto();
+            case 3 -> coffeeMaker.brewLatteMacchiato();
             case 4 -> coffeeMaker.brewChocolateMilk();
             case 5 -> coffeeMaker.brewHotCocoa();
         }
@@ -91,5 +90,28 @@ public class Program {
                 }
             }
         }
+    }
+
+    // Creates delay
+    private void delay(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // Print served drink
+    private void printServedDrink() {
+        UI.print("Brewing");
+        delay(500);
+        UI.print(".");
+        delay(500);
+        UI.print(".");
+        delay(500);
+        UI.print(".\n");
+        delay(500);
+
+        UI.println("Served a " + coffeeMaker.serve() + " ☕️");
     }
 }

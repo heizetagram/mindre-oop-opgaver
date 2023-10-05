@@ -6,7 +6,7 @@ public class CoffeeMaker {
     private Cup cup = new Cup();
     BlackCoffee blackCoffee = new BlackCoffee();
     Espresso espresso = new Espresso();
-    LatteMacchiato latteMachiatto = new LatteMacchiato();
+    LatteMacchiato latteMacchiato = new LatteMacchiato();
     ChocolateMilk chocolateMilk = new ChocolateMilk();
     HotCocoa hotCocoa = new HotCocoa();
 
@@ -15,10 +15,6 @@ public class CoffeeMaker {
     public String getType() {
         return cup.getType();
     }
-    public CupSize getSize() {
-        return cup.getSize();
-    }
-
     public String getEspresso() {
         return espresso.getType();
     }
@@ -37,8 +33,8 @@ public class CoffeeMaker {
     public void brewEspresso() {
         cup.setType(espresso.getType());
     }
-    public void brewLatteMachiatto() {
-        cup.setType(latteMachiatto.getType());
+    public void brewLatteMacchiato() {
+        cup.setType(latteMacchiato.getType());
     }
     public void brewChocolateMilk() {
         cup.setType(chocolateMilk.getType());

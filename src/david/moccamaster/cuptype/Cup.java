@@ -2,6 +2,7 @@ package david.moccamaster.cuptype;
 
 import david.moccamaster.CupSize;
 import david.moccamaster.EspressoShots;
+import david.ui.ConsoleColors;
 
 public class Cup {
     private String type;
@@ -40,11 +41,11 @@ public class Cup {
     @Override
     public String toString() {
         if (whippedCream)
-            cup = size + " sized " + type + " with whipped cream";
+            cup = ConsoleColors.YELLOW + size + ConsoleColors.RESET + " sized " + type + " with whipped cream";
         else if (espressoShots != null)
-            cup = espressoShots + " shot " + type;
+            cup = ConsoleColors.YELLOW + espressoShots + ConsoleColors.RESET + " shot " + type;
         else
-            cup = size + " sized " + type;
+            cup = ConsoleColors.YELLOW + size + ConsoleColors.RESET + " sized " + type;
         return cup;
     }
 }
