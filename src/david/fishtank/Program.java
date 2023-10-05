@@ -24,7 +24,7 @@ public class Program {
         aquarium.addFish(fish1); //Adds "Wogglie" to the Arraylist
         aquarium.addFish(fish2); //Adds "Swimmie" to the Arraylist
 
-        notes = new ArrayList<Note>();
+        notes = new ArrayList<>();
     }
 
     public static void main(String[] args) {
