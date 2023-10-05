@@ -1,0 +1,62 @@
+package david.moccamaster;
+
+import david.moccamaster.cuptype.*;
+
+public class CoffeeMaker {
+    private Cup cup = new Cup();
+    BlackCoffee blackCoffee = new BlackCoffee();
+    Espresso espresso = new Espresso();
+    LatteMacchiato latteMachiatto = new LatteMacchiato();
+    ChocolateMilk chocolateMilk = new ChocolateMilk();
+    HotCocoa hotCocoa = new HotCocoa();
+
+
+    // Getters
+    public String getType() {
+        return cup.getType();
+    }
+    public CupSize getSize() {
+        return cup.getSize();
+    }
+
+    public String getEspresso() {
+        return espresso.getType();
+    }
+    public String getChocolateMilk() {
+        return chocolateMilk.getType();
+    }
+    public String getHotCocoa() {
+        return hotCocoa.getType();
+    }
+
+
+    // Setters
+    public void brewBlackCoffee() {
+        cup.setType(blackCoffee.getType());
+    }
+    public void brewEspresso() {
+        cup.setType(espresso.getType());
+    }
+    public void brewLatteMachiatto() {
+        cup.setType(latteMachiatto.getType());
+    }
+    public void brewChocolateMilk() {
+        cup.setType(chocolateMilk.getType());
+    }
+    public void brewHotCocoa() {
+        cup.setType(hotCocoa.getType());
+    }
+    public void addWhippedCream() {
+        cup.setWhippedCream(true);
+    }
+    public void setCupSize(CupSize cupSize) {
+        cup.setSize(cupSize);
+    }
+    public void setEspressoShots(EspressoShots espressoShots) {
+        cup.setEspressoShots(espressoShots);
+    }
+
+    public Cup serve() {
+        return cup;
+    }
+}
