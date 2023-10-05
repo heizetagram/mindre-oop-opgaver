@@ -12,7 +12,6 @@ public class Faktura {
     private Date forfaldsdato;
     private Fakturamodtager fakturamodtager;
     private Fakturaudsteder fakturaudsteder;
-    private Fakturalinje fakturalinje;
     private ArrayList<Fakturalinje> fakturalinjer;
     private double subtotalUdenMoms;
     private double moms;
