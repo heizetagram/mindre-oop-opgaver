@@ -8,12 +8,12 @@ public class Program {
     String answer;
     boolean keepRunning;
 
+    // Initialize variables
     private void initVar() {
         coffeeMaker = new CoffeeMaker();
         keepRunning = true;
         menu = new Menu();
     }
-
 
     public static void main(String[] args) {
         new Program().run();
@@ -27,14 +27,13 @@ public class Program {
         menu.printTypeMenu();
         chooseType(UI.promptInt());
 
-        // If drink type isn't espresso
+        // Check if drink is/isn't an espresso
         if (!coffeeMaker.getType().equals(coffeeMaker.getEspresso())) {
             UI.println("What size?");
             menu.printSizeMenu();
             chooseSize(UI.promptInt());
-
             askWhippedCream();
-        } else {
+        } else { // Ask for shots instead of size for espresso
             UI.println("How many shots?");
             menu.printShotsAmountMenu();
             chooseEspressoShots(UI.promptInt());
