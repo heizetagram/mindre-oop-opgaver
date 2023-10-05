@@ -1,6 +1,6 @@
 package david.fishtank;
 
-import david.consolecolors.ConsoleColors;
+import david.ui.ConsoleColors;
 
 import java.time.LocalDateTime;
 

@@ -1,6 +1,6 @@
 package david.catlimb;
 
-import david.consolecolors.ConsoleColors;
+import david.ui.ConsoleColors;
 
 public class Cat {
     private String name;

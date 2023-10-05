@@ -1,4 +1,4 @@
-package david.consolecolors;
+package david.ui;
 
 public class ConsoleColors {
     // Reset
