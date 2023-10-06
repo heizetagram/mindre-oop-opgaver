@@ -134,15 +134,13 @@ public class Program {
 
         if (registeredCats.size() < 5) {
             for (Cat cat : cats) {
-                if (intAnswer == cat.getId()) {
+                if (intAnswer == cat.getId())
                     addRegisteredCat(cat);
-                }
             }
             UI.promptString(); // Scanner bug
-        } else {
-            UI.promptString(); // Scanner bug
-            cannotRegisterCat();
         }
+        if (!catExists)
+            cannotRegisterCat();
     }
 
     // Register cat (body), if cat isn't already registered
@@ -150,20 +148,22 @@ public class Program {
         catAlreadyRegistered = registeredCats.contains(cat);
         if (!catAlreadyRegistered) { // If cat isn't already registered, run the following code
             registeredCats.add(cat);
-            UI.println(cat + " registered");
+            UI.println(cat.getName() + ConsoleColors.GREEN_BOLD + " registered" + ConsoleColors.RESET);
             cat.setRegistered(true);
         } else {
-            UI.println(cat + " is already registered");
+            UI.println(cat.getName() + ConsoleColors.RED_BOLD + " is already registered" + ConsoleColors.RESET);
         }
         catExists = true;
     }
 
     // Cannot register cat
     private void cannotRegisterCat() {
-        if (!catExists && registeredCats.size() < 5)
-            UI.println("Invalid ID");
-        if (registeredCats.size() >= 5)
-            UI.println("Cannot register more than 5 cats");
+        if (registeredCats.size() < 5)
+            UI.println(ConsoleColors.RED_BOLD + "Invalid ID" + ConsoleColors.RESET);
+        if (registeredCats.size() >= 5) {
+            UI.println(ConsoleColors.RED_BOLD + "Cannot register more than 5 cats" + ConsoleColors.RESET);
+            UI.promptString(); // Scanner bug
+        }
     }
 
     // Show this option after the menu, if 'registeredCats' ArrayList isn't empty
