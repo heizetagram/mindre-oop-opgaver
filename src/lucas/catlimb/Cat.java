@@ -1,4 +1,4 @@
-package Lucas.CatLimb;
+package lucas.catlimb;
 
 public class Cat {
     private String chipId;

@@ -1,17 +1,16 @@
-package Lucas.LoanItems;
+package lucas.loanItems;
 
 public class LoanItem {
     private int id;
     private String type;
     private String title;
+    private static int nextId = 1;
 
-    public LoanItem(int id, String type, String title) {
-        this.id = id;
-        this.type = type;
-        this.title = title;
-    }
 
     public LoanItem(String type, String title) {
+        id = nextId++;
+        this.type = type;
+        this.title = title;
     }
 
     public int getId() {
@@ -26,4 +25,3 @@ public class LoanItem {
         return title;
     }
 }
-
