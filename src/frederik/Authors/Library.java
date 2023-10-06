@@ -1,4 +1,4 @@
-package frederik.Authors.Authors;
+package frederik.Authors;
 
 import java.util.ArrayList;
 

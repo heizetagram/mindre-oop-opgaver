@@ -1,4 +1,4 @@
-package frederik.Authors.Authors;
+package frederik.Authors;
 
 public class Author {
     private String name;

@@ -1,4 +1,4 @@
-package frederik.Authors.Faktura;
+package frederik.Faktura;
 
 import java.util.ArrayList;
 

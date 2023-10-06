@@ -2,7 +2,7 @@ package david.moccamaster;
 
 import david.ui.UI;
 
-public class Program {
+public class CoffeeShop {
     CoffeeMaker coffeeMaker;
     Menu menu;
     String answer;
@@ -16,7 +16,7 @@ public class Program {
     }
 
     public static void main(String[] args) {
-        new Program().run();
+        new CoffeeShop().run();
     }
 
     // Run method

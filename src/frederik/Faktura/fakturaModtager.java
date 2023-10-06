@@ -1,4 +1,4 @@
-package frederik.Authors.Faktura;
+package frederik.Faktura;
 
 public class fakturaModtager {
     private String email;

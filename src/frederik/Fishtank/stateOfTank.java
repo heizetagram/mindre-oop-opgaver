@@ -1,4 +1,4 @@
-package frederik.Authors.Fishtank;
+package frederik.Fishtank;
 
 public enum stateOfTank {
     CLEAN,
