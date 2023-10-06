@@ -1,4 +1,4 @@
-package Lucas.UI;
+package lucas.ui;
 
     import java.util.Scanner;
 

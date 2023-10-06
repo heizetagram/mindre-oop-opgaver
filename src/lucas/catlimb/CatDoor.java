@@ -1,4 +1,4 @@
-package Lucas.CatLimb;
+package lucas.catlimb;
 
 import java.util.ArrayList;
 import java.util.List;

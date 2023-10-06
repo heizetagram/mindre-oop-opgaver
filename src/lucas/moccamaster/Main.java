@@ -1,5 +1,4 @@
-package Lucas.MoccaMaster;
-import UI.UI;
+package lucas.moccamaster;
 
 public class Main {
     public static void main(String[] args) {

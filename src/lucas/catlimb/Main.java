@@ -1,6 +1,6 @@
-package Lucas.CatLimb;
+package lucas.catlimb;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         CatDoor catDoor = new CatDoor();
 
