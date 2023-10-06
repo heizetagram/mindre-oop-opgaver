@@ -1,4 +1,4 @@
-package frederik.Authors.Fishtank;
+package frederik.Fishtank;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package frederik.Authors.Faktura;
+package frederik.Faktura;
 
 public class fakturaLinjer {
     private String beskrivelse;

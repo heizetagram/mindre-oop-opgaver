@@ -1,4 +1,4 @@
-package frederik.Authors.Fishtank;
+package frederik.Fishtank;
 
 import java.util.Random;
 import java.util.Scanner;

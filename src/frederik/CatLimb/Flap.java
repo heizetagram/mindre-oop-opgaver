@@ -1,4 +1,4 @@
-package frederik.Authors.CatLimb;
+package frederik.CatLimb;
 
 public enum Flap {
     IN,
