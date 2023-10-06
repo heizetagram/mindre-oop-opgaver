@@ -1,4 +1,4 @@
-package frederik.Authors;
+package frederik.Authors.Authors;
 
 import java.util.ArrayList;
 
@@ -21,10 +21,10 @@ public class Library {
             System.out.println(authors.get(i).getName() + ": "
                     + authors.get(i).getEmail() + ": "
                     + authors.get(i).getGender() + " : "
-                    + authors.get(i).getTitle() + ": "
+                     + authors.get(i).getTitle() + ": "
                     + authors.get(i).getYearPublished() + ": ");
 
+            }
         }
     }
-}
 

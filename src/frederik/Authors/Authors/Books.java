@@ -1,4 +1,4 @@
-package frederik.Authors;
+package frederik.Authors.Authors;
 
 public class Books extends Author {
 
@@ -8,19 +8,19 @@ public class Books extends Author {
 
     public Books(String name, String email, char gender, String title, String yearPublished) {
 
-        super(name, gender, email);
-        this.title = title;
-        this.yearPublished = yearPublished;
+      super(name, gender, email);
+      this.title = title;
+      this.yearPublished = yearPublished;
     }
 
 
     public String getTitle()
-    {
+   {
         return title;
-    }
-    public String getYearPublished()
-    {
+   }
+   public String getYearPublished()
+   {
         return yearPublished;
-    }
+   }
 
 }

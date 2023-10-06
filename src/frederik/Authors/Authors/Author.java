@@ -1,4 +1,4 @@
-package frederik.Authors;
+package frederik.Authors.Authors;
 
 public class Author {
     private String name;
@@ -16,7 +16,7 @@ public class Author {
         this.gender = gender;
     }
     public char getGender(){
-        return gender;
+       return gender;
     }
     public void setEmail(String email){
         this.email = email;
