@@ -3,7 +3,7 @@ package lucas.catlimb;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CatDoor {
+public class CatFlap {
     enum Mode {
         IN_OUT, ONLY_IN, ONLY_OUT, CLOSED
     }
@@ -11,7 +11,7 @@ public class CatDoor {
     private Mode mode;
     private List<Cat> registeredCats;
 
-    public CatDoor() {
+    public CatFlap() {
         mode = Mode.CLOSED;
         registeredCats = new ArrayList<>();
     }
@@ -33,9 +33,5 @@ public class CatDoor {
             return registeredCats.contains(cat);
         }
         return false;
-    }
-
-    public boolean canCatExit() {
-        return mode == Mode.IN_OUT || mode == Mode.ONLY_OUT;
     }
 }

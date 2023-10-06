@@ -7,7 +7,4 @@ public class Cat {
         this.chipId = chipId;
     }
 
-    public String getChipId() {
-        return chipId;
     }
-}
